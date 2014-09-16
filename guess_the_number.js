@@ -44,6 +44,7 @@ $(document).ready(function() {
 				} else {
 					if (user_guess === correct_number) {
 						$('#try-again').html("Congrats! You've won! You guessed " + guesses.length.toString() + " times.");
+						$('#guess_num').prop("disabled", true);
 						$('#reset_btn').toggle();
 					}
 				}
